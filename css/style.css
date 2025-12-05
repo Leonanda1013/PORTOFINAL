@@ -1,0 +1,104 @@
+.foto-full {
+  height: 100vh; /* memenuhi tinggi layar */
+  overflow: hidden;
+}
+
+.img-kiri {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* memenuhi kolom tanpa distorsi */
+  object-position: center;
+}
+.social-icon {
+  font-size: 28px;
+  color: #333;
+  transition: 0.3s;
+}
+
+.social-icon:hover {
+  color: #0d6efd; /* warna biru bootstrap */
+  transform: scale(1.2);
+}
+
+/* Kontainer baris harus setinggi layar */
+.full-height {
+  height: 100vh;
+}
+
+/* Kolom kiri bisa scroll */
+.col-kiri-scroll {
+  height: 100vh;
+  overflow-y: auto;
+
+  /* sembunyikan scrollbar */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+/* Kolom kanan tidak scroll */
+.col-kanan-fixed {
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Sembunyikan scrollbar tapi tetap bisa scroll (untuk Chrome, Edge, Safari) */
+.col-kiri-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.youtube-card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.youtube-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.youtube-thumb {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+.achievements-scroll {
+  height: calc(100vh - 120px);
+  overflow-y: auto;
+  padding-right: 8px;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.achievements-scroll::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+  width: 0;
+  height: 0;
+}
+.youtube-video {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.fullscreen img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
